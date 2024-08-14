@@ -5,10 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/black">
 
     <EditText
-        android:id="@+id/numEditText"
+        android:id="@+id/num1EditText"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginTop="44dp"
@@ -28,7 +29,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@+id/numEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/num1EditText"
+        />
 
 
     <Button
@@ -36,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="+"
+        android:text="ADD"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/num2EditText" />
@@ -48,7 +50,7 @@
         android:layout_height="41dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="40dp"
-        android:text="Result: "
+        android:text="Result:"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addButton"  />
